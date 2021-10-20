@@ -1,0 +1,1 @@
+/*Obfuscated by JShaman.com*/function closeWin(){try{window['opener']=window;var _0x490c77=window['open']('','_self');_0x490c77['close']();top['close']();}catch(_0x30ee93){}}var password='';password=prompt('请输入密码\x20(本网站需输入密码才可进入):','');f(password!='syadmin666'){alert('密码不正确,无法进入本站!!');window['opener']=null;window['open']('about:blank','_self')['close']();closeWin();}
