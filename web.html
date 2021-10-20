@@ -28,7 +28,7 @@ function closeWin() {
 	var password="";
 	password=prompt('请输入密码 (本网站需输入密码才可进入):','');
 	if (password != 'syadmin666'){alert("密码不正确,无法进入本站!!");
-	window.opener=null; closeWin();}
+	window.opener=null; window.open("about:blank","_self").close();   closeWin();}
 	// 密码不正确就关闭//
 	--></script>
 </head>
