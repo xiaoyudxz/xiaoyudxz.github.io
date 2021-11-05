@@ -11,17 +11,14 @@
 <html>
 <head>
 <title>登录</title>
+<object id=closes type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11">
 <script Language=javascript>
-
 function Click(){
-if(event.button!=1){alert
-
-('屏蔽右键菜单谢谢。');
-
+if(event.button!=1){
+alert('屏蔽右键菜单谢谢。');
+window.event.returnValue=false;
 }}
-
 document.onmousedown=Click;
-
 </script>
 </head>
 <body>
