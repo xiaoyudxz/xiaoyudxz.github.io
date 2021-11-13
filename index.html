@@ -47,6 +47,10 @@ return false;
 }
 document.oncontextmenu = nocontextmenu; // for IE5+
 document.onmousedown = norightclick; // for all others
+window.onkeydown = window.onkeyup = window.onkeypress = function () { 
+window.event.returnValue = false; 
+return false; 
+} 
 //-->
 </script>
 </head>
