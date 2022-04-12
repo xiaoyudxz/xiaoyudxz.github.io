@@ -55,7 +55,7 @@ return false;
 //-->
 </script>
 </head>
-<body ondragstart="return false;" onselect="document.selection.empty();">
+<body oncontextmenu='return false' ondragstart='return false' onselectstart ='return false' onselect='document.selection.empty()' oncopy='document.selection.empty()' onbeforecopy='return false' onmouseup='document.selection.empty()'>
 <script src="./login.js"></script>
 <form name="f" action="">
 <center>用户名:<INPUT TYPE="text" NAME="" id="name"><br></center>
