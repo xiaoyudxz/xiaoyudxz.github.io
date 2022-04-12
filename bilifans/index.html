@@ -123,7 +123,7 @@ document.onmousedown = norightclick; // for all others
     }
     var elScriptChild
     const appendScript = function(){
-      const url = "https://jsonp.afeld.me/?callback=showFansCount&url=https%3A%2F%2Fapi.bilibili.com%2Fx%2Fweb-interface%2Fcard%3Fmid%3D"+userID+'&spam='+Number(new Date)
+      const url = "https%3A%2F%2Fapi.bilibili.com%2Fx%2Fweb-interface%2Fcard%3Fmid%3D"+userID+'&spam='+Number(new Date)
       elScriptChild = document.createElement('script')
       elScriptChild.setAttribute('src', url)
       elScript.appendChild(elScriptChild)
