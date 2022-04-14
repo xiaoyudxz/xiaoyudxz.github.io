@@ -21,7 +21,8 @@ document.onkeydown = keyListener;
 function keyListener(e) {
 // 当按下回车键，执行我们的代码
     if (e.keyCode == 13) {
-	document.getElementByName("get").click();
+	var a=index.pid.value;
+        window.location.href="http://ybt.ssoier.cn:8088/problem_show.php?pid="+a;
     }
 }
 function se()
