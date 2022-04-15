@@ -34,11 +34,11 @@ document.onkeydown = keyListener;
 function keyListener(e) {
 // 当按下回车键，执行我们的代码
     if (e.keyCode == 13) {
-	document.getElementById("g").click();
+	se();
     }
 }
 </script>
-<input value="Go!" type="button" id="g" name="get" onclick="se();return false;" />
+<input value="Go!" type="button" id="g" name="get" onclick="var a=index.pid.value;window.location.href="http://ybt.ssoier.cn:8088/problem_show.php?pid="+a;return false;" />
 </p>
 <script language="JavaScript">
 for(i=1000;i<=3000;i++)
