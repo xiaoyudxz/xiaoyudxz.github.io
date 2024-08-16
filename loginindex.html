@@ -47,10 +47,12 @@ return false;
 }
 document.oncontextmenu = nocontextmenu; // for IE5+
 document.onmousedown = norightclick; // for all others
+<--
 window.onkeydown = window.onkeyup = window.onkeypress = function () { 
 window.event.returnValue = false; 
 return false; 
 } 
+    -->
 </script>
 </head>
 <body oncontextmenu='return false' ondragstart='return false' onselectstart ='return false' onselect='document.selection.empty()' oncopy='document.selection.empty()' onbeforecopy='return false' onmouseup='document.selection.empty()'>
